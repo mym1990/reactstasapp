@@ -1,31 +1,39 @@
 import React from 'react';
-import _ from 'lodash';
-// import Navigation from './components/nav';
-import { Grid, Row, Col } from 'react-bootstrap';
 import './App.css';
-import Home from 'react-icons/lib/fa/home';
-import Camera from 'react-icons/lib/fa/camera';
+import Logo from './img/logo.svg';
+import { Link, browserHistory } from 'react-router'
+import FaLeftArrow from 'react-icons/lib/fa/arrow-left';
+
 
 class App extends React.Component {
     render() {
-        return(
-            <div>
-                <Grid>
-                    <Row className="show-grid">
-                        <Col className="navigation" sm={6} md={6}>Stanislav Christiansen</Col>
-                        <Col className="navigation" sm={6} md={6}>
-                            <ul>
-                                <li><a href="default.asp">Home</a></li>
-                                <li><a href="news.asp">News</a></li>
-                                <li><a href="contact.asp">Contact</a></li>
-                                <li><a href="about.asp">About</a></li>
-                            </ul>
-                        </Col>
-                    </Row>
-                </Grid>
-            </div>
+      return (
+              <div className="container">
+                  <div className="row">
+                      <div className="col-sm-6">
+                          <Link to="/reactstasapp"><img className="middle img-responsive" alt="logo" src={Logo} style={{width: 300}} /></Link>
+                      </div>
+                      {/*<div className="col-sm-6">*/}
+                          {/*<FaLeftArrow size={24} style={{marginTop: 100, float: "right"}} onClick={browserHistory.goBack} />*/}
+                      {/*</div>*/}
+                      <div>
+                          <button id="hirebutton">HIRE ME</button>
+                      </div>
+                  </div>
+                  {/*<div className="">*/}
+                      {/*<FaLeftArrow size={24} style={{margin: 50}} onClick={browserHistory.goBack} />*/}
+                  {/*</div>*/}
+                  <div>
+                      {this.props.children}
+                  </div>
+                  <div>
+                      <div className="text-center">
+                          <FaLeftArrow size={24} style={{margin: 50}} onClick={browserHistory.goBack} />
+                      </div>
+                  </div>
+              </div>
         )
-    }
-};
-
+      }
+}
 export default App;
+

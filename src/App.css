@@ -1,42 +1,110 @@
-.container {
-  padding: 50px;
+
+.border {
+  border: 1px solid white;
+  min-height: 200px;
+  padding: 0px;
+  background-color: white;
 }
 
-.navigation {
+.headerCenter {
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+.homeRow {
+}
+
+.nameRow {
+  border: 10px solid white;
+}
+
+.projects > a > div {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  min-height: 300px;
+}
+
+.projects > div {
+  border: 10px solid white;
+  background-color: whitesmoke;
+  min-height: 300px;
+}
+
+.descriptionRow {
+  border: 10px solid white;
+}
+
+.contactRow {
+  min-width: 200px;
+  margin: 25% auto;
+}
+
+.colIcon {
   text-align: center;
 }
 
-.navigation1 {
-  width: 50%;
-  margin: 0 auto;
+.middle {
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  float: left;
 }
 
-li {
+ul {
   display: inline;
-  padding: 20px;
+  list-style: none;
 }
 
-.App {
+/*.menu ul {*/
+  /*display:inline-table;*/
+/*}*/
+/*.menu ul li {*/
+  /*display:inline-block;*/
+  /*padding-right: 5px;*/
+/*}*/
+
+h2 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 36px;
+  letter-spacing: -1px;
+  padding-top: 100px;
+}
+
+a {
+  color: #337ab7;
+}
+
+a:hover {
+  color: black;
+}
+
+.projects {
+  margin-bottom: 100px;
+}
+
+#hirebutton {
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid whitesmoke;
   text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow:hidden;
+  background: transparent;
+  float: right;
+  margin-top: 100px;
+  transition: 1s;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#hirebutton:hover {
+  border: 2px solid black;
+  transition: 1s;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  letter-spacing: .04em;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
